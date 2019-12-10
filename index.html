@@ -479,6 +479,697 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/10/%E5%AE%8C%E5%85%A8%E5%8D%B8%E8%BD%BDMySQL%E6%8C%87%E5%8D%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Stone Sun">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Stone Sun's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/12/10/%E5%AE%8C%E5%85%A8%E5%8D%B8%E8%BD%BDMySQL%E6%8C%87%E5%8D%97/" itemprop="url">完全卸载MySQL指南</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-10T22:05:02+08:00">
+                2019-12-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/12/10/%E5%AE%8C%E5%85%A8%E5%8D%B8%E8%BD%BDMySQL%E6%8C%87%E5%8D%97/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2019/12/10/完全卸载MySQL指南/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/12/10/%E5%AE%8C%E5%85%A8%E5%8D%B8%E8%BD%BDMySQL%E6%8C%87%E5%8D%97/" class="leancloud_visitors" data-flag-title="完全卸载MySQL指南">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  379字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="完全卸载MySQL指南"><a href="#完全卸载MySQL指南" class="headerlink" title="完全卸载MySQL指南"></a>完全卸载MySQL指南</h1><h4 id="一、关闭MySQL服务器"><a href="#一、关闭MySQL服务器" class="headerlink" title="一、关闭MySQL服务器"></a>一、关闭MySQL服务器</h4><p>（1）在windows 10搜索框中输入<strong>服务</strong>，(可以<code>win+R</code>打开窗口，输入<code>services.msc</code>在其中找到mysql的服务名)，回车确认之后找到MySQL服务，右键<strong>停止</strong>就可以了。</p>
+<p>（2）右键<strong>计算机</strong>点击<strong>管理</strong>， 然后点击<strong>服务和应用程序</strong>，双击<strong>服务</strong>，找到MySql的服务，右键<strong>停止</strong>就可以了。</p>
+<h4 id="二、卸载相关MySQL软件"><a href="#二、卸载相关MySQL软件" class="headerlink" title="二、卸载相关MySQL软件"></a>二、卸载相关MySQL软件</h4><ul>
+<li><p>控制面板 —-&gt; 程序和功能 —–&gt;找到相关MySQL软件，右键卸载相关MySQL软件</p>
+</li>
+<li><p>用软件管家卸载相关MySQL软件</p>
+</li>
+</ul>
+<h4 id="二、删除MySQL相关文件"><a href="#二、删除MySQL相关文件" class="headerlink" title="二、删除MySQL相关文件"></a>二、删除MySQL相关文件</h4><p>（1）删除<code>C:\Program Files</code>目录下的<code>MySQL</code>文件</p>
+<p>（2）删除<code>C:\Program Files (x86)</code>目录下的<code>MySQL</code>文件</p>
+<p>（3）删除<code>C:\ProgramData</code>目录下的<code>MySQL</code>文件，勾选资源管理器查看选项卡的<code>隐藏的项目</code>，可看到ProgramData文件夹。</p>
+<p>（4）删除<code>C:\Users\你的用户名字\AppData\Roaming\MySQL</code>,也是隐藏的文件夹</p>
+<h4 id="三、删除注册表"><a href="#三、删除注册表" class="headerlink" title="三、删除注册表"></a>三、删除注册表</h4><p>windows+R，打开运行，输入<strong>regedit</strong>，点击确定，打开注册表，找到相应的文件夹，将下面三个路径下的MySQL相关文件夹删除。如果没有可以不用删除。</p>
+<ul>
+<li>HKEY_LOCAL_MACHINE/SYSTEM/ControlSet001/Services/Eventlog/Application/MySQL</li>
+<li>HKEY_LOCAL_MACHINE/SYSTEM/ControlSet002/Services/Eventlog/Application/MySQL</li>
+<li>HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Services/Eventlog/Application/MySQL</li>
+</ul>
+<h4 id="最好重启下电脑，再安装MySQL就可以了"><a href="#最好重启下电脑，再安装MySQL就可以了" class="headerlink" title="最好重启下电脑，再安装MySQL就可以了"></a>最好重启下电脑，再安装MySQL就可以了</h4><p>评论有亮点（听说经常有实习的程序员“删库跑路”🤣 ）</p>
+<p><img src="https://i.loli.net/2019/12/10/JZwtT6obBrsNFiA.png" alt="image-20191210101529805.png"></p>
+<p>参考网址：</p>
+<p><a href="https://blog.csdn.net/weixin_42369926/article/details/81042133" target="_blank" rel="noopener">https://blog.csdn.net/weixin_42369926/article/details/81042133</a></p>
+<p><a href="https://blog.csdn.net/cxy_Summer/article/details/70142322" target="_blank" rel="noopener">https://blog.csdn.net/cxy_Summer/article/details/70142322</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+      <div>
+        
+      </div>
+      
+    
+
+    
+
+    
+
+      <div>
+        
+      </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/10/Myeclipse%E7%A0%B4%E8%A7%A3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Stone Sun">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Stone Sun's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/12/10/Myeclipse%E7%A0%B4%E8%A7%A3/" itemprop="url">Myeclipse破解</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-10T21:54:13+08:00">
+                2019-12-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/12/10/Myeclipse%E7%A0%B4%E8%A7%A3/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2019/12/10/Myeclipse破解/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/12/10/Myeclipse%E7%A0%B4%E8%A7%A3/" class="leancloud_visitors" data-flag-title="Myeclipse破解">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  795字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="MyEclipse破解方法及失败解决方案"><a href="#MyEclipse破解方法及失败解决方案" class="headerlink" title="MyEclipse破解方法及失败解决方案"></a>MyEclipse破解方法及失败解决方案</h1><ul>
+<li>10.7.1和8.6.1版本链接：<a href="https://pan.baidu.com/s/14mLC-cQFC9jhnOp0o3rEHw" target="_blank" rel="noopener">https://pan.baidu.com/s/14mLC-cQFC9jhnOp0o3rEHw</a><br>提取码：ne6o</li>
+<li>各种版本链接：<a href="https://pan.baidu.com/s/1Jw8BPNyNoowS3PBPPLz-LQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1Jw8BPNyNoowS3PBPPLz-LQ</a><br>提取码：f3pf </li>
+</ul>
+<h2 id="常规破解步骤"><a href="#常规破解步骤" class="headerlink" title="常规破解步骤"></a>常规破解步骤</h2><h3 id="1-运行破解补丁"><a href="#1-运行破解补丁" class="headerlink" title="1.运行破解补丁"></a>1.运行破解补丁</h3><p>下图即为破解补丁压缩文件解压后的文件列表。如图中所示，主文件cracker.jar用于运行并破解MyEclipse。为了跨平台兼容，该破解程序采用Java开发，因此我们需要先确保计算机中已经正确安装了<strong>Java运行环境</strong>。<br> <img src="https://img-blog.csdnimg.cn/2019052923435312.png" alt="在这里插入图片描述"></p>
+<h3 id="2-cmd进入系统命令"><a href="#2-cmd进入系统命令" class="headerlink" title="2.cmd进入系统命令"></a>2.cmd进入系统命令</h3><p>进入补丁存放路径，输入java -jar cracker.jar 我们即可看到破解程序的图形界面。</p>
+<h3 id="3-如下图所示"><a href="#3-如下图所示" class="headerlink" title="3.如下图所示"></a>3.如下图所示</h3><p>我们先输入Usercode(可任意输入)，然后选择当前安装的MyEclipse版本，然后依次点击【SystemId】和【Active】。这个时候可以看到，下面生成了注册码，如下图：<br> <img src="https://img-blog.csdnimg.cn/20190529234448728.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzIyNjkzOQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="4-重新生成密钥文件"><a href="#4-重新生成密钥文件" class="headerlink" title="4.重新生成密钥文件"></a>4.重新生成密钥文件</h3><p>如下图所示，当我们在上个步骤点击【Active】后，破解程序就为我们生成了License Key、Activation Code、Activation Key等信息。<br> <img src="https://img-blog.csdnimg.cn/20190529234605889.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzIyNjkzOQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 接着，我们点击菜单栏的【Tools】-&gt;【RebuildKey】来重新生成密钥文件。<br> <img src="https://img-blog.csdnimg.cn/2019052923482928.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzIyNjkzOQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="5-执行菜单栏【Tools】-gt-【ReplaceJarFile】："><a href="#5-执行菜单栏【Tools】-gt-【ReplaceJarFile】：" class="headerlink" title="5.执行菜单栏【Tools】-&gt;【ReplaceJarFile】："></a>5.执行菜单栏【Tools】-&gt;【ReplaceJarFile】：</h3><p>在弹出的目录选择对话框中，选中MyEclipse的插件目录，然后单击【打开】。<br> 在10.x及之前版本的MyEclipse中，插件目录为：MyEclipse安装目录\Common\plugins。<br> 在2013及之后版本的MyEclipse中，插件目录为：MyEclipse安装目录\plugins。<br> <img src="https://img-blog.csdnimg.cn/20190529234944575.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzIyNjkzOQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="6-最后，点击菜单栏的【Tools】-gt-【SaveProperties】。"><a href="#6-最后，点击菜单栏的【Tools】-gt-【SaveProperties】。" class="headerlink" title="6.最后，点击菜单栏的【Tools】-&gt;【SaveProperties】。"></a>6.最后，点击菜单栏的【Tools】-&gt;【SaveProperties】。</h3><p>到这里，我们的MyEclipse就已经破解成功了。你现在可以打开MyEclipse，然后点击菜单栏的【MyEclipse】-&gt;【Subscription Information】，我们就可以看到MyEclipse已经破解激活成功了。<br> <img src="https://img-blog.csdnimg.cn/20190529235036498.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzIyNjkzOQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="失败解决方案"><a href="#失败解决方案" class="headerlink" title="失败解决方案"></a>失败解决方案</h2><h3 id="1-进入激活界面"><a href="#1-进入激活界面" class="headerlink" title="1. 进入激活界面"></a>1. 进入激活界面</h3><p>usercode随便输入，点击systemid 和active按钮，生成注册码。<br> <img src="https://img-blog.csdnimg.cn/20190529235354714.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzIyNjkzOQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="2-打开-MyEclipse"><a href="#2-打开-MyEclipse" class="headerlink" title="2. 打开 MyEclipse"></a>2. 打开 MyEclipse</h3><p>MyEclipse‐–&gt;Subscription Information，把上面生成的 LICENSEE 复制到  Subscripter 中，LICENSE_KEY 复制到 Subscriptioncode 中。点 击 Save&amp; Activate  Now 按钮。<br> <img src="https://img-blog.csdnimg.cn/20190529235511693.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzIyNjkzOQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="3-在弹出的窗口中"><a href="#3-在弹出的窗口中" class="headerlink" title="3. 在弹出的窗口中"></a>3. 在弹出的窗口中</h3><p>选择 Web activation(connect using your webbroswer)，点 Next，产生一个 URL，URL 中有个参数 SystemId，把SystemId复制到破解界面 的 SystemId 中。<br> <img src="https://img-blog.csdnimg.cn/20190529235607159.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzIyNjkzOQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> <img src="https://img-blog.csdnimg.cn/20190529235638433.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzIyNjkzOQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> <img src="https://img-blog.csdnimg.cn/20190529235648125.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzIyNjkzOQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="4-关闭-MyEclipse，到破解界面，执行以下操作："><a href="#4-关闭-MyEclipse，到破解界面，执行以下操作：" class="headerlink" title="4. 关闭 MyEclipse，到破解界面，执行以下操作："></a>4. 关闭 MyEclipse，到破解界面，执行以下操作：</h3><p>1.Tools—&gt;rebuildKey</p>
+<p>2.Tools‐‐-&gt;saveProperties</p>
+<p>3.Tools‐‐‐‐&gt;ReplaceJarFile</p>
+<p>4.选择你的安装目录/myeclipse/plusgin 目录 。（其他版本的MyEclipse的plusgin文件夹路径是/myeclipse/Common/plusgin ）</p>
+<p>5.替换过程需要稍等一会，替换成功后下面窗体会出现‘Done’来提示，这时</p>
+<p>再次点击 Active 按钮将会生成新的 ACTIVATION_KEY;</p>
+<h3 id="5-打开-MyEclipse，"><a href="#5-打开-MyEclipse，" class="headerlink" title="5. 打开 MyEclipse，"></a>5. 打开 MyEclipse，</h3><p>MyEclipse‐-&gt;Subscription Information，再次把上面生成的</p>
+<p>LICENSEE 复制到 Subscripter 中，</p>
+<p>LICENSE_KEY 复制到 Subscription code 中。</p>
+<p>点击 Activate Now 按钮。</p>
+<h3 id="6-在弹出的窗口中"><a href="#6-在弹出的窗口中" class="headerlink" title="6. 在弹出的窗口中"></a>6. 在弹出的窗口中</h3><p>选择 I already have an activation code。点击Next。<br> <img src="https://img-blog.csdnimg.cn/20190529235857111.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzIyNjkzOQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="7-破解界面"><a href="#7-破解界面" class="headerlink" title="7. 破解界面"></a>7. 破解界面</h3><p>把破解界面的 ACTIVATION_KEY 复制到弹出的窗口中。然后一路NEXT，有个地方它提示让你输入邮箱注册，这个无所谓。<br> <img src="https://img-blog.csdnimg.cn/20190530000032183.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzIyNjkzOQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="8-再次打开MyEclipse"><a href="#8-再次打开MyEclipse" class="headerlink" title="8. 再次打开MyEclipse"></a>8. 再次打开MyEclipse</h3><p>‐–&gt;Subscription Information，Product activation must be completed within * days的提示就消失了，注册成功。<br>转载自：<a href="https://blog.csdn.net/u012532233/article/details/53142805" target="_blank" rel="noopener">https://blog.csdn.net/u012532233/article/details/53142805</a></p>
+<p><a href="https://blog.csdn.net/weixin_43226939/article/details/90681009" target="_blank" rel="noopener">https://blog.csdn.net/weixin_43226939/article/details/90681009</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+      <div>
+        
+      </div>
+      
+    
+
+    
+
+    
+
+      <div>
+        
+      </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/10/MySQL8-0%E6%8C%87%E5%8D%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Stone Sun">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Stone Sun's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/12/10/MySQL8-0%E6%8C%87%E5%8D%97/" itemprop="url">MySQL8.0指南</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-10T21:43:08+08:00">
+                2019-12-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/12/10/MySQL8-0%E6%8C%87%E5%8D%97/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2019/12/10/MySQL8-0指南/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/12/10/MySQL8-0%E6%8C%87%E5%8D%97/" class="leancloud_visitors" data-flag-title="MySQL8.0指南">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.1k字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="1、在MySQL的官网上下载安装文件并配置MySQL"><a href="#1、在MySQL的官网上下载安装文件并配置MySQL" class="headerlink" title="1、在MySQL的官网上下载安装文件并配置MySQL"></a>1、在MySQL的官网上下载安装文件并配置MySQL</h2><p>提示：</p>
+<ul>
+<li>在安装过程中，window防火墙会弹出是否允许更改硬件等提示，点击是。</li>
+<li>360安全卫士等会将MySQL等数据库文件误报成木马程序，建议安装过程中关闭360。</li>
+<li>MySQL安装过程失败，很多是重新安装MySQL所导致，在卸载MySQL时，也要把之前的安装目录删除掉，一般在<code>program file</code>文件夹中。也要把MySQL的DATA目录删除，可能在用户文件夹中，然后再重新安装。</li>
+</ul>
+<h3 id="1-首先转到https-dev-mysql-com-downloads-installer-下载SQL"><a href="#1-首先转到https-dev-mysql-com-downloads-installer-下载SQL" class="headerlink" title="1.首先转到https://dev.mysql.com/downloads/installer/下载SQL"></a>1.首先转到<a href="https://dev.mysql.com/downloads/installer/下载SQL" target="_blank" rel="noopener">https://dev.mysql.com/downloads/installer/下载SQL</a></h3><p>点击<code>Download</code></p>
+<p><img src="https://i.loli.net/2019/12/10/IkMJ4ioBjOGpvlm.png" alt="image-20191210113808477.png"></p>
+<hr>
+<p>点击<code>No thanks, just start my download.</code>这时进入了下载页面，等待下载完成后运行</p>
+<p><img src="https://i.loli.net/2019/12/10/1J8Lns3WiDXhkFu.png" alt></p>
+<hr>
+<h3 id="2-下载后，进行安装，"><a href="#2-下载后，进行安装，" class="headerlink" title="2.下载后，进行安装，"></a>2.下载后，进行安装，</h3><p>(1)进入<code>License Agreement</code>界面,勾选<code>I accept the license terms</code>,然后点击<code>Next</code></p>
+<p><img src="https://img-blog.csdn.net/20180926211302741?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpZXpoaW1pbmcxMjM0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<hr>
+<p>(2)默认勾选<code>Developer Default</code>，然后点击<code>Next</code></p>
+<p><img src="https://img-blog.csdn.net/20180730221738953?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTk1NTk1Mw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<hr>
+<p>(3)点击<code>Execute</code>稍等一会后</p>
+<p><img src="https://img-blog.csdn.net/20180926211838186?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpZXpoaW1pbmcxMjM0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<hr>
+<p>(4)弹出的提示框选择<code>Yes</code></p>
+<p><img src="https://img-blog.csdn.net/20180926212326471?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpZXpoaW1pbmcxMjM0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<hr>
+<p>(5)点击<code>Execute</code></p>
+<p><img src="https://img-blog.csdn.net/20180926212457279?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpZXpoaW1pbmcxMjM0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<hr>
+<p>(6)点击<code>Next</code>进行配置</p>
+<p><img src="https://img-blog.csdn.net/20180926212822515?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpZXpoaW1pbmcxMjM0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt></p>
+<hr>
+<p>(7)点击<code>Next</code></p>
+<p><img src="https://img-blog.csdn.net/20180730222306479?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTk1NTk1Mw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<hr>
+<p>(8)点击<code>Next</code></p>
+<p><img src="https://img-blog.csdn.net/20180730222606954?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTk1NTk1Mw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<hr>
+<p>(9)选择使用更强的加密方式进行验证，点击<code>Next</code></p>
+<p><img src="https://img-blog.csdn.net/20180926214954232?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpZXpoaW1pbmcxMjM0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<hr>
+<p>（10）输入密码并再次确认</p>
+<p><img src="https://img-blog.csdn.net/20180926215209720?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpZXpoaW1pbmcxMjM0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<hr>
+<p>（11）点击<code>Next</code></p>
+<p><img src="https://img-blog.csdn.net/20180926215328439?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpZXpoaW1pbmcxMjM0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<hr>
+<p>(12)点击<code>Execute</code></p>
+<p><img src="https://img-blog.csdn.net/20180926215452160?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpZXpoaW1pbmcxMjM0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<hr>
+<p>(13)<code>Finish</code>完成配置</p>
+<p><img src="https://img-blog.csdn.net/20180926215821358?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpZXpoaW1pbmcxMjM0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt></p>
+<hr>
+<p>(14)输入密码，然后点击<code>Check</code>，再点击<code>Next</code></p>
+<p><img src="https://img-blog.csdn.net/20180926220123812?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpZXpoaW1pbmcxMjM0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<hr>
+<p>(15)点击<code>Next</code>,然后点击<code>Finish</code></p>
+<p><img src="https://img-blog.csdn.net/20180730223222318?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTk1NTk1Mw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<h2 id="2、Navicat软件1251错误解决办法"><a href="#2、Navicat软件1251错误解决办法" class="headerlink" title="2、Navicat软件1251错误解决办法"></a>2、Navicat软件1251错误解决办法</h2><p>在Windows10搜索框输入“cmd”在<strong>以管理员身份</strong>打开窗口，在DOS窗口中输入</p>
+<ol>
+<li><code>cd C:\Program Files\MySQL\MySQL Server 8.0\bin</code>（注释：如果您的MySQL文件在其他目录上，则请输入相应地址）     回车</li>
+<li><code>mysql -uroot -p</code>       回车</li>
+<li>输入自己设置的密码      回车</li>
+<li><code>use mysql；</code>  回车 </li>
+<li><code>ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED WITH mysql_native_password BY &#39;你的密码&#39;;</code>        回车</li>
+<li><code>FLUSH PRIVILEGES;</code>     回车</li>
+<li>关闭DOS窗口，重新点击数据库</li>
+</ol>
+<h2 id="3、关于配置Path环境变量："><a href="#3、关于配置Path环境变量：" class="headerlink" title="3、关于配置Path环境变量："></a>3、关于配置Path环境变量：</h2><p>想必很多读者都会觉得，在登录MySQL时每次都要输入<code>cd C:\Program Files\MySQL\MySQL Server 8.0\bin</code> 有点麻烦，有什么更好的办法呢？这需要将MySQL的bin目录添加到系统的环境变量中去。</p>
+<ol>
+<li><p>右键桌面上的“此电脑”选择“属性”，点击左侧的“高级系统设置”，在“系统属性”对话框中选择“高级”选项卡，点击“环境变量”。</p>
+<p><img src="https://i.loli.net/2019/12/10/ikQeWvlh3yuUpDz.png" alt="image-20191210195228589.png"></p>
+</li>
+<li><p>打开“环境变量”对话框后，在”系统变量”列表中选择“Path”变量，点击“编辑”，部分截图如下：</p>
+</li>
+</ol>
+<p><img src="https://i.loli.net/2019/12/10/mw6QtHoBLfzAden.png" alt="image-20191210200323012.png"></p>
+<ol start="3">
+<li>在“编辑环境变量”对话框中点击<code>新建</code>，输入<code>C:\Program Files\MySQL\MySQL Server 8.0\bin</code>注释：如果您的MySQL文件在其他目录上，则请输入相应地址），最后点击确定，完成环境变量的配置。</li>
+</ol>
+<p><img src="https://i.loli.net/2019/12/10/dX5xNMPDHiYJ86E.png" alt="image-20191210200350687.png"></p>
+<ol start="4">
+<li>这时可以直接使用MySQL命令登录数据库了</li>
+</ol>
+<p>参考网址：<a href="https://blog.csdn.net/xiezhiming1234/article/details/82860339" target="_blank" rel="noopener">https://blog.csdn.net/xiezhiming1234/article/details/82860339</a></p>
+<h2 id="4、Navicat软件1045错误解决办法"><a href="#4、Navicat软件1045错误解决办法" class="headerlink" title="4、Navicat软件1045错误解决办法"></a>4、Navicat软件1045错误解决办法</h2><p><code>ERROR 1045 (28000): Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: YES)</code></p>
+<p>这种问题的本质是用户密码出现错误</p>
+<p>参考网站：<a href="https://blog.csdn.net/lzf_hlh/article/details/80885139" target="_blank" rel="noopener">https://blog.csdn.net/lzf_hlh/article/details/80885139</a></p>
+<h2 id="5、Navicat软件2003错误解决办法"><a href="#5、Navicat软件2003错误解决办法" class="headerlink" title="5、Navicat软件2003错误解决办法"></a>5、Navicat软件2003错误解决办法</h2><p><code>ERROR 2003:Can&#39;t connect to MySQL server on &#39;localhost&#39; (10061)</code></p>
+<ul>
+<li><p>在windows 10搜索框中输入<code>服务</code>，(可以<code>win+R</code>打开窗口，输入<code>services.msc</code>在其中找到mysql的服务名)，回车确认之后找到MySQL服务，双击打开属性对话框，通过点击<code>启动</code>。</p>
+</li>
+<li><p>右键“计算机”点击“管理”， 然后点击“服务和应用程序”，双击“服务”，找到MySql的服务，右键启动就可以了。</p>
+</li>
+<li><p>在windows 10搜索框中输入<code>cmd</code>,右键命令提示符选项，选择<strong>以管理员身份运行</strong>，在命令提示符界面输入<code>net start MySQL80</code>即可启动MySQL服务。输入<code>net start mysql80</code>即停止MySQL服务。</p>
+<ul>
+<li><p>出现服务器名无效的解决方案：在这里输入的“MySQL80”是我们配置MySQL时设定的服务的名字，在有的参考书中，直接让我们输入”net start  MySQL”，读者在实际操作过程中照搬照抄，就会出现服务名无效的情况。如果忘记了服务名，可以win+R打开窗口，输入<code>services.msc</code>在其中找到mysql的服务名。</p>
+</li>
+<li><p>发生系统错误并拒绝访问的解决方案：有的同学可能用快捷键“Win+r”打开命令提示界面，再输入启动语句，这时候可能会出现这个提示，这是我们没有<strong>以管理员身份运行</strong>的结果。这时请参照上文第二种启动方法。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="6、其他错误请期待后续更新"><a href="#6、其他错误请期待后续更新" class="headerlink" title="6、其他错误请期待后续更新"></a>6、其他错误请期待后续更新</h2>
+          
+        
+      
+    </div>
+    
+    
+    
+
+      <div>
+        
+      </div>
+      
+    
+
+    
+
+    
+
+      <div>
+        
+      </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/18/%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%94%99%E8%AF%AF%E6%80%BB%E7%BB%93/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -887,7 +1578,7 @@
               
                 <a href="/archives%7C%7C%20archive">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -900,7 +1591,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
