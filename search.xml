@@ -182,42 +182,6 @@
       </tags>
   </entry>
   <entry>
-    <title>建博客的错误总结</title>
-    <url>/2019/11/18/%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%94%99%E8%AF%AF%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<p> 如果你使用Hexo遇到同样的问题,这里有一些常见问题的解决方案。 </p>
-<p>参考：<a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">hexo github问题讨论</a></p>
-<a id="more"></a>
-
-<h5 id="问题一"><a href="#问题一" class="headerlink" title="问题一"></a>问题一</h5><p> 点击“home”或者tag等几个标签总是报错404，而且URL地址最后面总是出现<br> %20 😕</p>
-<p><strong>解决办法：</strong>😏</p>
-<p>在<code>hexo/themes/next/_config.yml</code>文件里的第 95 行</p>
-<blockquote>
-<p>94:menu:<br> 95:  home: / || home </p>
-<p>tags: /tags || tags</p>
-<p>categories: /categories || th</p>
-</blockquote>
-<p>改为：</p>
-<blockquote>
-<p>95:  home: /|| home</p>
-<p>tags: /tags|| tags</p>
-<p>categories: /categories|| th</p>
-</blockquote>
-<h5 id="问题二"><a href="#问题二" class="headerlink" title="问题二"></a>问题二</h5><p>hexo 配置时阅读次数不显示😕</p>
-<p><strong>解决办法：</strong>😏</p>
-<p>在<code>hexo/themes/next/layout\_third-party/analytics/busuanzi-counter.swig</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">把原有的：</span><br><span class="line">&lt;script async src=&quot;//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">域名改一下即可：</span><br><span class="line">&lt;script async src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-
-<p><a href="http://busuanzi.ibruce.info/" target="_blank" rel="noopener">参考网站</a></p>
-<h5 id="问题三"><a href="#问题三" class="headerlink" title="问题三"></a>问题三</h5><p>当<code>Git Bas</code>h执行<code>hexo new &lt;title&gt;</code>时，会生成不是以title的title.md文件😕</p>
-<p><strong>解决办法：</strong>😏</p>
-<p>Hexo配置文件<code>hexo/_config.yml</code>中设定如下：</p>
-<p><code>new_post_name: :title.md</code></p>
-]]></content>
-      <tags>
-        <tag>“blog”</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown 使用手册</title>
     <url>/2019/11/06/markdwon%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</url>
     <content><![CDATA[<h2 id="1-Markdown-是什么？"><a href="#1-Markdown-是什么？" class="headerlink" title="1. Markdown 是什么？"></a>1. Markdown 是什么？</h2><h3 id="1-1-认识Markdown"><a href="#1-1-认识Markdown" class="headerlink" title="1.1 认识Markdown"></a>1.1 认识Markdown</h3><p>Markdown是一种轻量级的 [ 标记语言 ] ，Markdown 是一个 Web 上使用的文本到HTML的转换工具，可以通过简单、易读易写的文本格式生成结构化的HTML文档。目前面向开源及私有软件项目的托管平台—<strong>GitHub</strong>、中国专业IT社区—<strong>CSDN</strong>、优质的创作社区—<strong>简书</strong>等网站均支持这种格式。</p>
@@ -583,7 +547,7 @@
 <h3 id="多个标签的设置"><a href="#多个标签的设置" class="headerlink" title="多个标签的设置"></a>多个标签的设置</h3><p>方式一：仿照Hexo配置文件中的写法</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tags:</span><br><span class="line">  - 前端</span><br><span class="line">  - Hexo</span><br><span class="line">  - HTML</span><br><span class="line">  - JavaScript</span><br></pre></td></tr></table></figure>]]></content>
       <tags>
-        <tag>“blog”</tag>
+        <tag>blog</tag>
       </tags>
   </entry>
 </search>
