@@ -5,6 +5,8 @@
     <url>/2019/12/10/%E5%AE%8C%E5%85%A8%E5%8D%B8%E8%BD%BDMySQL%E6%8C%87%E5%8D%97/</url>
     <content><![CDATA[<h1 id="完全卸载MySQL指南"><a href="#完全卸载MySQL指南" class="headerlink" title="完全卸载MySQL指南"></a>完全卸载MySQL指南</h1><h4 id="一、关闭MySQL服务器"><a href="#一、关闭MySQL服务器" class="headerlink" title="一、关闭MySQL服务器"></a>一、关闭MySQL服务器</h4><p>（1）在windows 10搜索框中输入<strong>服务</strong>，(可以<code>win+R</code>打开窗口，输入<code>services.msc</code>在其中找到mysql的服务名)，回车确认之后找到MySQL服务，右键<strong>停止</strong>就可以了。</p>
 <p>（2）右键<strong>计算机</strong>点击<strong>管理</strong>， 然后点击<strong>服务和应用程序</strong>，双击<strong>服务</strong>，找到MySql的服务，右键<strong>停止</strong>就可以了。</p>
+<a id="more"></a>
+
 <h4 id="二、卸载相关MySQL软件"><a href="#二、卸载相关MySQL软件" class="headerlink" title="二、卸载相关MySQL软件"></a>二、卸载相关MySQL软件</h4><ul>
 <li><p>控制面板 —-&gt; 程序和功能 —–&gt;找到相关MySQL软件，右键卸载相关MySQL软件</p>
 </li>
@@ -38,6 +40,8 @@
 <li>10.7.1和8.6.1版本链接：<a href="https://pan.baidu.com/s/14mLC-cQFC9jhnOp0o3rEHw" target="_blank" rel="noopener">https://pan.baidu.com/s/14mLC-cQFC9jhnOp0o3rEHw</a><br>提取码：ne6o</li>
 <li>各种版本链接：<a href="https://pan.baidu.com/s/1Jw8BPNyNoowS3PBPPLz-LQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1Jw8BPNyNoowS3PBPPLz-LQ</a><br>提取码：f3pf </li>
 </ul>
+<a id="more"></a>
+
 <h2 id="常规破解步骤"><a href="#常规破解步骤" class="headerlink" title="常规破解步骤"></a>常规破解步骤</h2><h3 id="1-运行破解补丁"><a href="#1-运行破解补丁" class="headerlink" title="1.运行破解补丁"></a>1.运行破解补丁</h3><p>下图即为破解补丁压缩文件解压后的文件列表。如图中所示，主文件cracker.jar用于运行并破解MyEclipse。为了跨平台兼容，该破解程序采用Java开发，因此我们需要先确保计算机中已经正确安装了<strong>Java运行环境</strong>。<br> <img src="https://img-blog.csdnimg.cn/2019052923435312.png" alt="在这里插入图片描述"></p>
 <h3 id="2-cmd进入系统命令"><a href="#2-cmd进入系统命令" class="headerlink" title="2.cmd进入系统命令"></a>2.cmd进入系统命令</h3><p>进入补丁存放路径，输入java -jar cracker.jar 我们即可看到破解程序的图形界面。</p>
 <h3 id="3-如下图所示"><a href="#3-如下图所示" class="headerlink" title="3.如下图所示"></a>3.如下图所示</h3><p>我们先输入Usercode(可任意输入)，然后选择当前安装的MyEclipse版本，然后依次点击【SystemId】和【Active】。这个时候可以看到，下面生成了注册码，如下图：<br> <img src="https://img-blog.csdnimg.cn/20190529234448728.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzIyNjkzOQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
@@ -75,6 +79,8 @@
 <li>360安全卫士等会将MySQL等数据库文件误报成木马程序，建议安装过程中关闭360。</li>
 <li>MySQL安装过程失败，很多是重新安装MySQL所导致，在卸载MySQL时，也要把之前的安装目录删除掉，一般在<code>program file</code>文件夹中。也要把MySQL的DATA目录删除，可能在用户文件夹中，然后再重新安装。</li>
 </ul>
+<a id="more"></a>
+
 <h3 id="1-首先转到https-dev-mysql-com-downloads-installer-下载SQL"><a href="#1-首先转到https-dev-mysql-com-downloads-installer-下载SQL" class="headerlink" title="1.首先转到https://dev.mysql.com/downloads/installer/下载SQL"></a>1.首先转到<a href="https://dev.mysql.com/downloads/installer/下载SQL" target="_blank" rel="noopener">https://dev.mysql.com/downloads/installer/下载SQL</a></h3><p>点击<code>Download</code></p>
 <p><img src="https://i.loli.net/2019/12/10/IkMJ4ioBjOGpvlm.png" alt="image-20191210113808477.png"></p>
 <hr>
@@ -215,10 +221,10 @@
     <title>Markdown 使用手册</title>
     <url>/2019/11/06/markdwon%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</url>
     <content><![CDATA[<h2 id="1-Markdown-是什么？"><a href="#1-Markdown-是什么？" class="headerlink" title="1. Markdown 是什么？"></a>1. Markdown 是什么？</h2><h3 id="1-1-认识Markdown"><a href="#1-1-认识Markdown" class="headerlink" title="1.1 认识Markdown"></a>1.1 认识Markdown</h3><p>Markdown是一种轻量级的 [ 标记语言 ] ，Markdown 是一个 Web 上使用的文本到HTML的转换工具，可以通过简单、易读易写的文本格式生成结构化的HTML文档。目前面向开源及私有软件项目的托管平台—<strong>GitHub</strong>、中国专业IT社区—<strong>CSDN</strong>、优质的创作社区—<strong>简书</strong>等网站均支持这种格式。</p>
-<p><img src="https://i.loli.net/2019/11/20/i61rPAXWykdKhgj.jpg" alt="GitHub实例.jpg"></p>
-<p><a href="https://github.com/Chyroc/WechatSogou" target="_blank" rel="noopener">GitHub基于搜狗微信搜索的微信公众号爬虫接口</a></p>
  <a id="more"></a>
 
+<p><img src="https://i.loli.net/2019/11/20/i61rPAXWykdKhgj.jpg" alt="GitHub实例.jpg"></p>
+<p><a href="https://github.com/Chyroc/WechatSogou" target="_blank" rel="noopener">GitHub基于搜狗微信搜索的微信公众号爬虫接口</a></p>
 <h3 id="1-2兼容-HTML"><a href="#1-2兼容-HTML" class="headerlink" title="1.2兼容 HTML"></a>1.2兼容 HTML</h3><p>Markdown 语法的目标是：成为一种适用于网络的书写语言。</p>
 <p>Markdown 不是想要取代 HTML，甚至也没有要和它相近，<strong>它的语法种类很少，只对应 HTML 标记的一小部分</strong>。Markdown 的构想不是要使得 HTML 文档更容易书写。Markdown 的理念是，能让文档更容易读、写和随意改。HTML 是一种发布的格式，Markdown 是一种书写的格式。</p>
 <h2 id="2-Markdown-适合做什么？"><a href="#2-Markdown-适合做什么？" class="headerlink" title="2. Markdown 适合做什么？"></a>2. Markdown 适合做什么？</h2><p> Typora 作为一款 Markdown 文本编辑器，在快速文字排版以及代码编辑方面的效率是显而易见的。使用人群方面，Typora 适合那些对码字手速和排版顺畅度有要求的人群，譬如码农、网站小编…… </p>
